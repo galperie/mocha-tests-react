@@ -1,7 +1,8 @@
-var ReactDOM   = require('react-dom');
-var VeryFirstDiv   = require('./components/component');
+import * as React from "react";
+import ReactDOM from "react-dom";
+import AwesomeDiv from "./components/AwesomeDiv";
 
 ReactDOM.render(
-  <VeryFirstDiv />,
-  document.getElementById('container')
+    <AwesomeDiv/>,
+    document.getElementById('container')
 );

@@ -1,7 +1,7 @@
 {
-  "name": "react-mocha-example",
+  "name": "react-mocha-intellij",
   "version": "1.0.0",
-  "description": "Getting started with React and Mocha",
+  "description": "Setting up mocha tests in intellij",
   "main": "index.html",
   "devDependencies": {
     "babel": "^6.1.18",

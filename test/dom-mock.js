@@ -1,11 +1,13 @@
-module.exports = function(markup) {
-  if (typeof document !== 'undefined') return;
+const render = (markup) => {
+    if (typeof document !== 'undefined') return;
 
-  var jsdom = require('jsdom').jsdom;
+    const jsdom = require('jsdom').jsdom;
 
-  global.document = jsdom(markup || '');
-  global.window = document.defaultView;
-  global.navigator = {
-    userAgent: 'node.js'
-  };
+    global.document = jsdom(markup || '');
+    global.window = document.defaultView;
+    global.navigator = {
+        userAgent: 'node.js'
+    };
 };
+
+export default render;
